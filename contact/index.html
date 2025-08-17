@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+		<title>Contact | Yuwei Wu</title>
+		<link rel="icon" href="../img/logo.png" type="32x32">
+		<link rel="shortcut icon" href="../img/logo.png" type="16x16">
+	
+	    <!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+		<!-- Bootstrap CSS (v4.5.2) -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+		<!-- Google Fonts: Poppins -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+		<!-- Font Awesome (latest - version 6.5.0) -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link rel="stylesheet" type="text/css" href="../style.css">		
+
+    </head>
+
+	<body class="body_style">
+
+		<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+			<img class= "Logo"  src = "../img/logo.png", type="32x32"/>
+			<div class="navbar-brand">
+				<strong>Yuwei Wu&nbsp;</strong> | Planning, Optimization, and Learning For Autonomy
+			  </div>
+			<button class="navbar-toggler border" type="button" 
+			  data-toggle="collapse" data-target="#navbarNavDropdown" 
+			  aria-controls="navbarNavDropdown" aria-expanded="false" 
+			  aria-label="Toggle navigation">
+			  <i class="fas fa-bars" style="color: #757575;"></i>
+		    </button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav   ml-auto">
+					<li class="nav-item active"><a class="nav-link" href="../">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="../publications/">Publications</a></li>
+					<li class="nav-item active"><a class="nav-link" href="../experience/">Experience</a></li>
+					<li class="nav-item active"><a class="nav-link" href="../contact/">Contact</a></li>	
+					<li class="nav-item active"><a class="nav-link" href="../Yuwei_Resume.pdf">CV</a></li>		
+				
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarMore" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  More
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarMore">
+						  <a class="dropdown-item" href="https://im4rob.github.io/" target="_blank">RSS25 Workshop</a>
+						</div>
+					  </li>
+
+				
+				</ul>
+			
+			
+			</div>
+		</nav>
+	
+		<br/>
+		<br/>
+
+
+		<div id="bodyContent"></div>
+	
+		<script>
+			// Load body-content.html into the div
+			fetch("content.html")
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById("bodyContent").innerHTML = data;
+			})
+			.catch(error => console.log("Error loading the content: ", error));
+		</script>
+
+
+
+
+		<!-- jQuery (slim version for Bootstrap 4) -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+		<!-- Popper.js (needed for dropdowns/tooltips in Bootstrap 4) -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+				integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+				crossorigin="anonymous"></script>
+
+		<!-- Bootstrap JS Bundle -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+	</body>
+
+</html>
